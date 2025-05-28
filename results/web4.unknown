@@ -1,0 +1,4325 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+ <title>Nikto Report</title>
+ <style type="text/css">
+  .dataTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 11pt; 
+   font-weight: normal; 
+   color: #000066;
+   background: #EEEEEE;
+   border: thin solid black;
+   width: 95%;
+  }
+  .headerTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 15pt; 
+   font-weight: normal; 
+   color: white;
+   background: #000066;
+   border: thin solid black;
+   width: 300px;
+  }
+  .column-head
+  {
+   width: 15em;
+   font-weight:bold;
+   vertical-align: top;
+  }
+  .copyright
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   font-style: italic;
+   color: black;
+  }
+  body
+  {
+   background: white;
+  }
+ </style>
+</head>
+<body>
+<div>
+<a name="1"></a>
+<table class="headerTable">
+ <tr>
+   <td>192.168.54.132 / 192.168.54.132 port 3000</td>
+ </tr>
+</table>
+<table class="dataTable">
+ <tr>
+   <td class="column-head">Target IP</td>
+   <td>192.168.54.132</td>
+ </tr>
+ <tr>
+   <td class="column-head">Target hostname</td>
+   <td>192.168.54.132</td>
+ </tr>
+  <tr>
+   <td class="column-head">Target Port</td>
+   <td>3000</td>
+ </tr>
+  <tr>
+   <td class="column-head">HTTP Server</td>
+   <td></td>
+ </tr>
+ <tr>
+   <td class="column-head">Site Link (Name)</td>
+   <td><a href="http://192.168.54.132:3000/">http://192.168.54.132:3000/</a></td>
+ </tr>
+ <tr>
+   <td class="column-head">Site Link (IP)</td>
+   <td><a href="http://192.168.54.132:3000/">http://192.168.54.132:3000/</a></td>
+ </tr>
+ </table>
+</div>
+<p></p>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/: Retrieved access-control-allow-origin header: *.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/">http://192.168.54.132:3000/</a><br>
+      <a href="http://192.168.54.132:3000/">http://192.168.54.132:3000/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/: Uncommon header 'x-recruiting' found, with contents: /#/jobs.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/">http://192.168.54.132:3000/</a><br>
+      <a href="http://192.168.54.132:3000/">http://192.168.54.132:3000/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/ftp/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/ftp/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/ftp/">http://192.168.54.132:3000/ftp/</a><br>
+      <a href="http://192.168.54.132:3000/ftp/">http://192.168.54.132:3000/ftp/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/robots.txt</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: contains 1 entry which should be manually viewed.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/robots.txt">http://192.168.54.132:3000/robots.txt</a><br>
+      <a href="http://192.168.54.132:3000/robots.txt">http://192.168.54.132:3000/robots.txt</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://developer.mozilla.org/en-US/docs/Glossary/Robots.txt'>https://developer.mozilla.org/en-US/docs/Glossary/Robots.txt</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/">http://192.168.54.132:3000/</a><br>
+      <a href="http://192.168.54.132:3000/">http://192.168.54.132:3000/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/'>https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/backup.alz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/backup.alz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/backup.alz">http://192.168.54.132:3000/backup.alz</a><br>
+      <a href="http://192.168.54.132:3000/backup.alz">http://192.168.54.132:3000/backup.alz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.54.tgz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.54.tgz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.54.tgz">http://192.168.54.132:3000/192.168.54.tgz</a><br>
+      <a href="http://192.168.54.132:3000/192.168.54.tgz">http://192.168.54.132:3000/192.168.54.tgz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/19216854.alz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/19216854.alz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/19216854.alz">http://192.168.54.132:3000/19216854.alz</a><br>
+      <a href="http://192.168.54.132:3000/19216854.alz">http://192.168.54.132:3000/19216854.alz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/dump.alz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/dump.alz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/dump.alz">http://192.168.54.132:3000/dump.alz</a><br>
+      <a href="http://192.168.54.132:3000/dump.alz">http://192.168.54.132:3000/dump.alz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/19216854132.pem</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/19216854132.pem: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/19216854132.pem">http://192.168.54.132:3000/19216854132.pem</a><br>
+      <a href="http://192.168.54.132:3000/19216854132.pem">http://192.168.54.132:3000/19216854132.pem</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192168.pem</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192168.pem: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192168.pem">http://192.168.54.132:3000/192168.pem</a><br>
+      <a href="http://192.168.54.132:3000/192168.pem">http://192.168.54.132:3000/192168.pem</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/site.tar.bz2</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/site.tar.bz2: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/site.tar.bz2">http://192.168.54.132:3000/site.tar.bz2</a><br>
+      <a href="http://192.168.54.132:3000/site.tar.bz2">http://192.168.54.132:3000/site.tar.bz2</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.pem</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.pem: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.pem">http://192.168.54.132:3000/192.168.pem</a><br>
+      <a href="http://192.168.54.132:3000/192.168.pem">http://192.168.54.132:3000/192.168.pem</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.54.132.pem</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.54.132.pem: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.54.132.pem">http://192.168.54.132:3000/192.168.54.132.pem</a><br>
+      <a href="http://192.168.54.132:3000/192.168.54.132.pem">http://192.168.54.132:3000/192.168.54.132.pem</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192168.alz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192168.alz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192168.alz">http://192.168.54.132:3000/192168.alz</a><br>
+      <a href="http://192.168.54.132:3000/192168.alz">http://192.168.54.132:3000/192168.alz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192_168_54_132.war</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192_168_54_132.war: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192_168_54_132.war">http://192.168.54.132:3000/192_168_54_132.war</a><br>
+      <a href="http://192.168.54.132:3000/192_168_54_132.war">http://192.168.54.132:3000/192_168_54_132.war</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/backup.pem</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/backup.pem: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/backup.pem">http://192.168.54.132:3000/backup.pem</a><br>
+      <a href="http://192.168.54.132:3000/backup.pem">http://192.168.54.132:3000/backup.pem</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192_168_54_132.tar.lzma</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192_168_54_132.tar.lzma: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192_168_54_132.tar.lzma">http://192.168.54.132:3000/192_168_54_132.tar.lzma</a><br>
+      <a href="http://192.168.54.132:3000/192_168_54_132.tar.lzma">http://192.168.54.132:3000/192_168_54_132.tar.lzma</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/site.jks</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/site.jks: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/site.jks">http://192.168.54.132:3000/site.jks</a><br>
+      <a href="http://192.168.54.132:3000/site.jks">http://192.168.54.132:3000/site.jks</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192_168_54_132.tar.bz2</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192_168_54_132.tar.bz2: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192_168_54_132.tar.bz2">http://192.168.54.132:3000/192_168_54_132.tar.bz2</a><br>
+      <a href="http://192.168.54.132:3000/192_168_54_132.tar.bz2">http://192.168.54.132:3000/192_168_54_132.tar.bz2</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/dump.tar.lzma</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/dump.tar.lzma: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/dump.tar.lzma">http://192.168.54.132:3000/dump.tar.lzma</a><br>
+      <a href="http://192.168.54.132:3000/dump.tar.lzma">http://192.168.54.132:3000/dump.tar.lzma</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/54.alz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/54.alz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/54.alz">http://192.168.54.132:3000/54.alz</a><br>
+      <a href="http://192.168.54.132:3000/54.alz">http://192.168.54.132:3000/54.alz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.54.132.cer</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.54.132.cer: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.54.132.cer">http://192.168.54.132:3000/192.168.54.132.cer</a><br>
+      <a href="http://192.168.54.132:3000/192.168.54.132.cer">http://192.168.54.132:3000/192.168.54.132.cer</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/132.cer</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/132.cer: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/132.cer">http://192.168.54.132:3000/132.cer</a><br>
+      <a href="http://192.168.54.132:3000/132.cer">http://192.168.54.132:3000/132.cer</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.54.tar</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.54.tar: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.54.tar">http://192.168.54.132:3000/192.168.54.tar</a><br>
+      <a href="http://192.168.54.132:3000/192.168.54.tar">http://192.168.54.132:3000/192.168.54.tar</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.54.132.tar</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.54.132.tar: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.54.132.tar">http://192.168.54.132:3000/192.168.54.132.tar</a><br>
+      <a href="http://192.168.54.132:3000/192.168.54.132.tar">http://192.168.54.132:3000/192.168.54.132.tar</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/archive.jks</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/archive.jks: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/archive.jks">http://192.168.54.132:3000/archive.jks</a><br>
+      <a href="http://192.168.54.132:3000/archive.jks">http://192.168.54.132:3000/archive.jks</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/54.pem</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/54.pem: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/54.pem">http://192.168.54.132:3000/54.pem</a><br>
+      <a href="http://192.168.54.132:3000/54.pem">http://192.168.54.132:3000/54.pem</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.54.132.tgz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.54.132.tgz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.54.132.tgz">http://192.168.54.132:3000/192.168.54.132.tgz</a><br>
+      <a href="http://192.168.54.132:3000/192.168.54.132.tgz">http://192.168.54.132:3000/192.168.54.132.tgz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192168.cer</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192168.cer: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192168.cer">http://192.168.54.132:3000/192168.cer</a><br>
+      <a href="http://192.168.54.132:3000/192168.cer">http://192.168.54.132:3000/192168.cer</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/database.jks</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/database.jks: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/database.jks">http://192.168.54.132:3000/database.jks</a><br>
+      <a href="http://192.168.54.132:3000/database.jks">http://192.168.54.132:3000/database.jks</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/archive.egg</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/archive.egg: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/archive.egg">http://192.168.54.132:3000/archive.egg</a><br>
+      <a href="http://192.168.54.132:3000/archive.egg">http://192.168.54.132:3000/archive.egg</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/database.egg</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/database.egg: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/database.egg">http://192.168.54.132:3000/database.egg</a><br>
+      <a href="http://192.168.54.132:3000/database.egg">http://192.168.54.132:3000/database.egg</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/backup.war</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/backup.war: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/backup.war">http://192.168.54.132:3000/backup.war</a><br>
+      <a href="http://192.168.54.132:3000/backup.war">http://192.168.54.132:3000/backup.war</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/archive.war</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/archive.war: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/archive.war">http://192.168.54.132:3000/archive.war</a><br>
+      <a href="http://192.168.54.132:3000/archive.war">http://192.168.54.132:3000/archive.war</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/site.alz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/site.alz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/site.alz">http://192.168.54.132:3000/site.alz</a><br>
+      <a href="http://192.168.54.132:3000/site.alz">http://192.168.54.132:3000/site.alz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192168.tar.bz2</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192168.tar.bz2: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192168.tar.bz2">http://192.168.54.132:3000/192168.tar.bz2</a><br>
+      <a href="http://192.168.54.132:3000/192168.tar.bz2">http://192.168.54.132:3000/192168.tar.bz2</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/19216854.tar.bz2</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/19216854.tar.bz2: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/19216854.tar.bz2">http://192.168.54.132:3000/19216854.tar.bz2</a><br>
+      <a href="http://192.168.54.132:3000/19216854.tar.bz2">http://192.168.54.132:3000/19216854.tar.bz2</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/132.jks</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/132.jks: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/132.jks">http://192.168.54.132:3000/132.jks</a><br>
+      <a href="http://192.168.54.132:3000/132.jks">http://192.168.54.132:3000/132.jks</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192168.war</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192168.war: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192168.war">http://192.168.54.132:3000/192168.war</a><br>
+      <a href="http://192.168.54.132:3000/192168.war">http://192.168.54.132:3000/192168.war</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.pem</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.pem: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.pem">http://192.168.54.132:3000/192.pem</a><br>
+      <a href="http://192.168.54.132:3000/192.pem">http://192.168.54.132:3000/192.pem</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/dump.tar.bz2</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/dump.tar.bz2: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/dump.tar.bz2">http://192.168.54.132:3000/dump.tar.bz2</a><br>
+      <a href="http://192.168.54.132:3000/dump.tar.bz2">http://192.168.54.132:3000/dump.tar.bz2</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/54.egg</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/54.egg: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/54.egg">http://192.168.54.132:3000/54.egg</a><br>
+      <a href="http://192.168.54.132:3000/54.egg">http://192.168.54.132:3000/54.egg</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/168.pem</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/168.pem: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/168.pem">http://192.168.54.132:3000/168.pem</a><br>
+      <a href="http://192.168.54.132:3000/168.pem">http://192.168.54.132:3000/168.pem</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.54.132.egg</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.54.132.egg: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.54.132.egg">http://192.168.54.132:3000/192.168.54.132.egg</a><br>
+      <a href="http://192.168.54.132:3000/192.168.54.132.egg">http://192.168.54.132:3000/192.168.54.132.egg</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/backup.cer</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/backup.cer: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/backup.cer">http://192.168.54.132:3000/backup.cer</a><br>
+      <a href="http://192.168.54.132:3000/backup.cer">http://192.168.54.132:3000/backup.cer</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/132.tar.lzma</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/132.tar.lzma: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/132.tar.lzma">http://192.168.54.132:3000/132.tar.lzma</a><br>
+      <a href="http://192.168.54.132:3000/132.tar.lzma">http://192.168.54.132:3000/132.tar.lzma</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/dump.jks</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/dump.jks: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/dump.jks">http://192.168.54.132:3000/dump.jks</a><br>
+      <a href="http://192.168.54.132:3000/dump.jks">http://192.168.54.132:3000/dump.jks</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/site.tar.lzma</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/site.tar.lzma: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/site.tar.lzma">http://192.168.54.132:3000/site.tar.lzma</a><br>
+      <a href="http://192.168.54.132:3000/site.tar.lzma">http://192.168.54.132:3000/site.tar.lzma</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.54.alz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.54.alz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.54.alz">http://192.168.54.132:3000/192.168.54.alz</a><br>
+      <a href="http://192.168.54.132:3000/192.168.54.alz">http://192.168.54.132:3000/192.168.54.alz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/backup.tar.bz2</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/backup.tar.bz2: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/backup.tar.bz2">http://192.168.54.132:3000/backup.tar.bz2</a><br>
+      <a href="http://192.168.54.132:3000/backup.tar.bz2">http://192.168.54.132:3000/backup.tar.bz2</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192_168_54_132.alz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192_168_54_132.alz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192_168_54_132.alz">http://192.168.54.132:3000/192_168_54_132.alz</a><br>
+      <a href="http://192.168.54.132:3000/192_168_54_132.alz">http://192.168.54.132:3000/192_168_54_132.alz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.cer</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.cer: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.cer">http://192.168.54.132:3000/192.168.cer</a><br>
+      <a href="http://192.168.54.132:3000/192.168.cer">http://192.168.54.132:3000/192.168.cer</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/database.pem</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/database.pem: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/database.pem">http://192.168.54.132:3000/database.pem</a><br>
+      <a href="http://192.168.54.132:3000/database.pem">http://192.168.54.132:3000/database.pem</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/site.tar</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/site.tar: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/site.tar">http://192.168.54.132:3000/site.tar</a><br>
+      <a href="http://192.168.54.132:3000/site.tar">http://192.168.54.132:3000/site.tar</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/archive.pem</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/archive.pem: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/archive.pem">http://192.168.54.132:3000/archive.pem</a><br>
+      <a href="http://192.168.54.132:3000/archive.pem">http://192.168.54.132:3000/archive.pem</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/site.tgz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/site.tgz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/site.tgz">http://192.168.54.132:3000/site.tgz</a><br>
+      <a href="http://192.168.54.132:3000/site.tgz">http://192.168.54.132:3000/site.tgz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.cer</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.cer: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.cer">http://192.168.54.132:3000/192.cer</a><br>
+      <a href="http://192.168.54.132:3000/192.cer">http://192.168.54.132:3000/192.cer</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/19216854132.tgz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/19216854132.tgz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/19216854132.tgz">http://192.168.54.132:3000/19216854132.tgz</a><br>
+      <a href="http://192.168.54.132:3000/19216854132.tgz">http://192.168.54.132:3000/19216854132.tgz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.jks</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.jks: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.jks">http://192.168.54.132:3000/192.168.jks</a><br>
+      <a href="http://192.168.54.132:3000/192.168.jks">http://192.168.54.132:3000/192.168.jks</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/168.cer</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/168.cer: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/168.cer">http://192.168.54.132:3000/168.cer</a><br>
+      <a href="http://192.168.54.132:3000/168.cer">http://192.168.54.132:3000/168.cer</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/database.alz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/database.alz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/database.alz">http://192.168.54.132:3000/database.alz</a><br>
+      <a href="http://192.168.54.132:3000/database.alz">http://192.168.54.132:3000/database.alz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192_168_54_132.jks</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192_168_54_132.jks: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192_168_54_132.jks">http://192.168.54.132:3000/192_168_54_132.jks</a><br>
+      <a href="http://192.168.54.132:3000/192_168_54_132.jks">http://192.168.54.132:3000/192_168_54_132.jks</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/54.jks</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/54.jks: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/54.jks">http://192.168.54.132:3000/54.jks</a><br>
+      <a href="http://192.168.54.132:3000/54.jks">http://192.168.54.132:3000/54.jks</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.54.war</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.54.war: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.54.war">http://192.168.54.132:3000/192.168.54.war</a><br>
+      <a href="http://192.168.54.132:3000/192.168.54.war">http://192.168.54.132:3000/192.168.54.war</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/dump.tar</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/dump.tar: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/dump.tar">http://192.168.54.132:3000/dump.tar</a><br>
+      <a href="http://192.168.54.132:3000/dump.tar">http://192.168.54.132:3000/dump.tar</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/19216854.jks</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/19216854.jks: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/19216854.jks">http://192.168.54.132:3000/19216854.jks</a><br>
+      <a href="http://192.168.54.132:3000/19216854.jks">http://192.168.54.132:3000/19216854.jks</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/19216854.egg</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/19216854.egg: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/19216854.egg">http://192.168.54.132:3000/19216854.egg</a><br>
+      <a href="http://192.168.54.132:3000/19216854.egg">http://192.168.54.132:3000/19216854.egg</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/backup.tgz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/backup.tgz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/backup.tgz">http://192.168.54.132:3000/backup.tgz</a><br>
+      <a href="http://192.168.54.132:3000/backup.tgz">http://192.168.54.132:3000/backup.tgz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/132.pem</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/132.pem: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/132.pem">http://192.168.54.132:3000/132.pem</a><br>
+      <a href="http://192.168.54.132:3000/132.pem">http://192.168.54.132:3000/132.pem</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/dump.tgz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/dump.tgz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/dump.tgz">http://192.168.54.132:3000/dump.tgz</a><br>
+      <a href="http://192.168.54.132:3000/dump.tgz">http://192.168.54.132:3000/dump.tgz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/archive.cer</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/archive.cer: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/archive.cer">http://192.168.54.132:3000/archive.cer</a><br>
+      <a href="http://192.168.54.132:3000/archive.cer">http://192.168.54.132:3000/archive.cer</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/database.tar.bz2</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/database.tar.bz2: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/database.tar.bz2">http://192.168.54.132:3000/database.tar.bz2</a><br>
+      <a href="http://192.168.54.132:3000/database.tar.bz2">http://192.168.54.132:3000/database.tar.bz2</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/168.tar.lzma</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/168.tar.lzma: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/168.tar.lzma">http://192.168.54.132:3000/168.tar.lzma</a><br>
+      <a href="http://192.168.54.132:3000/168.tar.lzma">http://192.168.54.132:3000/168.tar.lzma</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/54.tar</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/54.tar: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/54.tar">http://192.168.54.132:3000/54.tar</a><br>
+      <a href="http://192.168.54.132:3000/54.tar">http://192.168.54.132:3000/54.tar</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.tar.lzma</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.tar.lzma: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.tar.lzma">http://192.168.54.132:3000/192.tar.lzma</a><br>
+      <a href="http://192.168.54.132:3000/192.tar.lzma">http://192.168.54.132:3000/192.tar.lzma</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192168.tgz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192168.tgz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192168.tgz">http://192.168.54.132:3000/192168.tgz</a><br>
+      <a href="http://192.168.54.132:3000/192168.tgz">http://192.168.54.132:3000/192168.tgz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.egg</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.egg: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.egg">http://192.168.54.132:3000/192.168.egg</a><br>
+      <a href="http://192.168.54.132:3000/192.168.egg">http://192.168.54.132:3000/192.168.egg</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/19216854132.cer</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/19216854132.cer: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/19216854132.cer">http://192.168.54.132:3000/19216854132.cer</a><br>
+      <a href="http://192.168.54.132:3000/19216854132.cer">http://192.168.54.132:3000/19216854132.cer</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/54.tar.bz2</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/54.tar.bz2: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/54.tar.bz2">http://192.168.54.132:3000/54.tar.bz2</a><br>
+      <a href="http://192.168.54.132:3000/54.tar.bz2">http://192.168.54.132:3000/54.tar.bz2</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/19216854.pem</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/19216854.pem: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/19216854.pem">http://192.168.54.132:3000/19216854.pem</a><br>
+      <a href="http://192.168.54.132:3000/19216854.pem">http://192.168.54.132:3000/19216854.pem</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.jks</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.jks: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.jks">http://192.168.54.132:3000/192.jks</a><br>
+      <a href="http://192.168.54.132:3000/192.jks">http://192.168.54.132:3000/192.jks</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.war</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.war: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.war">http://192.168.54.132:3000/192.168.war</a><br>
+      <a href="http://192.168.54.132:3000/192.168.war">http://192.168.54.132:3000/192.168.war</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/19216854132.war</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/19216854132.war: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/19216854132.war">http://192.168.54.132:3000/19216854132.war</a><br>
+      <a href="http://192.168.54.132:3000/19216854132.war">http://192.168.54.132:3000/19216854132.war</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.54.tar.lzma</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.54.tar.lzma: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.54.tar.lzma">http://192.168.54.132:3000/192.168.54.tar.lzma</a><br>
+      <a href="http://192.168.54.132:3000/192.168.54.tar.lzma">http://192.168.54.132:3000/192.168.54.tar.lzma</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/168.jks</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/168.jks: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/168.jks">http://192.168.54.132:3000/168.jks</a><br>
+      <a href="http://192.168.54.132:3000/168.jks">http://192.168.54.132:3000/168.jks</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.tar.lzma</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.tar.lzma: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.tar.lzma">http://192.168.54.132:3000/192.168.tar.lzma</a><br>
+      <a href="http://192.168.54.132:3000/192.168.tar.lzma">http://192.168.54.132:3000/192.168.tar.lzma</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.tgz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.tgz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.tgz">http://192.168.54.132:3000/192.tgz</a><br>
+      <a href="http://192.168.54.132:3000/192.tgz">http://192.168.54.132:3000/192.tgz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192_168_54_132.egg</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192_168_54_132.egg: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192_168_54_132.egg">http://192.168.54.132:3000/192_168_54_132.egg</a><br>
+      <a href="http://192.168.54.132:3000/192_168_54_132.egg">http://192.168.54.132:3000/192_168_54_132.egg</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/168.tgz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/168.tgz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/168.tgz">http://192.168.54.132:3000/168.tgz</a><br>
+      <a href="http://192.168.54.132:3000/168.tgz">http://192.168.54.132:3000/168.tgz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192168.egg</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192168.egg: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192168.egg">http://192.168.54.132:3000/192168.egg</a><br>
+      <a href="http://192.168.54.132:3000/192168.egg">http://192.168.54.132:3000/192168.egg</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.54.132.alz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.54.132.alz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.54.132.alz">http://192.168.54.132:3000/192.168.54.132.alz</a><br>
+      <a href="http://192.168.54.132:3000/192.168.54.132.alz">http://192.168.54.132:3000/192.168.54.132.alz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/dump.war</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/dump.war: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/dump.war">http://192.168.54.132:3000/dump.war</a><br>
+      <a href="http://192.168.54.132:3000/dump.war">http://192.168.54.132:3000/dump.war</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/archive.tar</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/archive.tar: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/archive.tar">http://192.168.54.132:3000/archive.tar</a><br>
+      <a href="http://192.168.54.132:3000/archive.tar">http://192.168.54.132:3000/archive.tar</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/132.tar.bz2</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/132.tar.bz2: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/132.tar.bz2">http://192.168.54.132:3000/132.tar.bz2</a><br>
+      <a href="http://192.168.54.132:3000/132.tar.bz2">http://192.168.54.132:3000/132.tar.bz2</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/19216854132.egg</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/19216854132.egg: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/19216854132.egg">http://192.168.54.132:3000/19216854132.egg</a><br>
+      <a href="http://192.168.54.132:3000/19216854132.egg">http://192.168.54.132:3000/19216854132.egg</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.tgz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.tgz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.tgz">http://192.168.54.132:3000/192.168.tgz</a><br>
+      <a href="http://192.168.54.132:3000/192.168.tgz">http://192.168.54.132:3000/192.168.tgz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/database.tgz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/database.tgz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/database.tgz">http://192.168.54.132:3000/database.tgz</a><br>
+      <a href="http://192.168.54.132:3000/database.tgz">http://192.168.54.132:3000/database.tgz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/backup.egg</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/backup.egg: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/backup.egg">http://192.168.54.132:3000/backup.egg</a><br>
+      <a href="http://192.168.54.132:3000/backup.egg">http://192.168.54.132:3000/backup.egg</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/54.cer</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/54.cer: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/54.cer">http://192.168.54.132:3000/54.cer</a><br>
+      <a href="http://192.168.54.132:3000/54.cer">http://192.168.54.132:3000/54.cer</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.54.132.war</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.54.132.war: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.54.132.war">http://192.168.54.132:3000/192.168.54.132.war</a><br>
+      <a href="http://192.168.54.132:3000/192.168.54.132.war">http://192.168.54.132:3000/192.168.54.132.war</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192_168_54_132.pem</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192_168_54_132.pem: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192_168_54_132.pem">http://192.168.54.132:3000/192_168_54_132.pem</a><br>
+      <a href="http://192.168.54.132:3000/192_168_54_132.pem">http://192.168.54.132:3000/192_168_54_132.pem</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/19216854132.jks</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/19216854132.jks: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/19216854132.jks">http://192.168.54.132:3000/19216854132.jks</a><br>
+      <a href="http://192.168.54.132:3000/19216854132.jks">http://192.168.54.132:3000/19216854132.jks</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/132.tar</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/132.tar: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/132.tar">http://192.168.54.132:3000/132.tar</a><br>
+      <a href="http://192.168.54.132:3000/132.tar">http://192.168.54.132:3000/132.tar</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/168.war</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/168.war: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/168.war">http://192.168.54.132:3000/168.war</a><br>
+      <a href="http://192.168.54.132:3000/168.war">http://192.168.54.132:3000/168.war</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/168.egg</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/168.egg: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/168.egg">http://192.168.54.132:3000/168.egg</a><br>
+      <a href="http://192.168.54.132:3000/168.egg">http://192.168.54.132:3000/168.egg</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.54.132.tar.bz2</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.54.132.tar.bz2: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.54.132.tar.bz2">http://192.168.54.132:3000/192.168.54.132.tar.bz2</a><br>
+      <a href="http://192.168.54.132:3000/192.168.54.132.tar.bz2">http://192.168.54.132:3000/192.168.54.132.tar.bz2</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.54.132.tar.lzma</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.54.132.tar.lzma: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.54.132.tar.lzma">http://192.168.54.132:3000/192.168.54.132.tar.lzma</a><br>
+      <a href="http://192.168.54.132:3000/192.168.54.132.tar.lzma">http://192.168.54.132:3000/192.168.54.132.tar.lzma</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192_168_54_132.tgz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192_168_54_132.tgz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192_168_54_132.tgz">http://192.168.54.132:3000/192_168_54_132.tgz</a><br>
+      <a href="http://192.168.54.132:3000/192_168_54_132.tgz">http://192.168.54.132:3000/192_168_54_132.tgz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.war</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.war: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.war">http://192.168.54.132:3000/192.war</a><br>
+      <a href="http://192.168.54.132:3000/192.war">http://192.168.54.132:3000/192.war</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.egg</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.egg: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.egg">http://192.168.54.132:3000/192.egg</a><br>
+      <a href="http://192.168.54.132:3000/192.egg">http://192.168.54.132:3000/192.egg</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192_168_54_132.tar</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192_168_54_132.tar: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192_168_54_132.tar">http://192.168.54.132:3000/192_168_54_132.tar</a><br>
+      <a href="http://192.168.54.132:3000/192_168_54_132.tar">http://192.168.54.132:3000/192_168_54_132.tar</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192_168_54_132.cer</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192_168_54_132.cer: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192_168_54_132.cer">http://192.168.54.132:3000/192_168_54_132.cer</a><br>
+      <a href="http://192.168.54.132:3000/192_168_54_132.cer">http://192.168.54.132:3000/192_168_54_132.cer</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/database.cer</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/database.cer: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/database.cer">http://192.168.54.132:3000/database.cer</a><br>
+      <a href="http://192.168.54.132:3000/database.cer">http://192.168.54.132:3000/database.cer</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/site.war</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/site.war: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/site.war">http://192.168.54.132:3000/site.war</a><br>
+      <a href="http://192.168.54.132:3000/site.war">http://192.168.54.132:3000/site.war</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/19216854.war</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/19216854.war: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/19216854.war">http://192.168.54.132:3000/19216854.war</a><br>
+      <a href="http://192.168.54.132:3000/19216854.war">http://192.168.54.132:3000/19216854.war</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/19216854.tar</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/19216854.tar: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/19216854.tar">http://192.168.54.132:3000/19216854.tar</a><br>
+      <a href="http://192.168.54.132:3000/19216854.tar">http://192.168.54.132:3000/19216854.tar</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/19216854132.tar.lzma</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/19216854132.tar.lzma: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/19216854132.tar.lzma">http://192.168.54.132:3000/19216854132.tar.lzma</a><br>
+      <a href="http://192.168.54.132:3000/19216854132.tar.lzma">http://192.168.54.132:3000/19216854132.tar.lzma</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/archive.alz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/archive.alz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/archive.alz">http://192.168.54.132:3000/archive.alz</a><br>
+      <a href="http://192.168.54.132:3000/archive.alz">http://192.168.54.132:3000/archive.alz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/132.alz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/132.alz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/132.alz">http://192.168.54.132:3000/132.alz</a><br>
+      <a href="http://192.168.54.132:3000/132.alz">http://192.168.54.132:3000/132.alz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/archive.tar.bz2</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/archive.tar.bz2: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/archive.tar.bz2">http://192.168.54.132:3000/archive.tar.bz2</a><br>
+      <a href="http://192.168.54.132:3000/archive.tar.bz2">http://192.168.54.132:3000/archive.tar.bz2</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/19216854.tar.lzma</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/19216854.tar.lzma: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/19216854.tar.lzma">http://192.168.54.132:3000/19216854.tar.lzma</a><br>
+      <a href="http://192.168.54.132:3000/19216854.tar.lzma">http://192.168.54.132:3000/19216854.tar.lzma</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.54.jks</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.54.jks: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.54.jks">http://192.168.54.132:3000/192.168.54.jks</a><br>
+      <a href="http://192.168.54.132:3000/192.168.54.jks">http://192.168.54.132:3000/192.168.54.jks</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/168.tar.bz2</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/168.tar.bz2: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/168.tar.bz2">http://192.168.54.132:3000/168.tar.bz2</a><br>
+      <a href="http://192.168.54.132:3000/168.tar.bz2">http://192.168.54.132:3000/168.tar.bz2</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/site.pem</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/site.pem: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/site.pem">http://192.168.54.132:3000/site.pem</a><br>
+      <a href="http://192.168.54.132:3000/site.pem">http://192.168.54.132:3000/site.pem</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192168.jks</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192168.jks: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192168.jks">http://192.168.54.132:3000/192168.jks</a><br>
+      <a href="http://192.168.54.132:3000/192168.jks">http://192.168.54.132:3000/192168.jks</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.tar.bz2</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.tar.bz2: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.tar.bz2">http://192.168.54.132:3000/192.tar.bz2</a><br>
+      <a href="http://192.168.54.132:3000/192.tar.bz2">http://192.168.54.132:3000/192.tar.bz2</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/19216854132.tar</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/19216854132.tar: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/19216854132.tar">http://192.168.54.132:3000/19216854132.tar</a><br>
+      <a href="http://192.168.54.132:3000/19216854132.tar">http://192.168.54.132:3000/19216854132.tar</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.tar</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.tar: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.tar">http://192.168.54.132:3000/192.168.tar</a><br>
+      <a href="http://192.168.54.132:3000/192.168.tar">http://192.168.54.132:3000/192.168.tar</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/site.egg</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/site.egg: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/site.egg">http://192.168.54.132:3000/site.egg</a><br>
+      <a href="http://192.168.54.132:3000/site.egg">http://192.168.54.132:3000/site.egg</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192168.tar</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192168.tar: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192168.tar">http://192.168.54.132:3000/192168.tar</a><br>
+      <a href="http://192.168.54.132:3000/192168.tar">http://192.168.54.132:3000/192168.tar</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/archive.tgz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/archive.tgz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/archive.tgz">http://192.168.54.132:3000/archive.tgz</a><br>
+      <a href="http://192.168.54.132:3000/archive.tgz">http://192.168.54.132:3000/archive.tgz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.54.pem</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.54.pem: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.54.pem">http://192.168.54.132:3000/192.168.54.pem</a><br>
+      <a href="http://192.168.54.132:3000/192.168.54.pem">http://192.168.54.132:3000/192.168.54.pem</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/site.cer</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/site.cer: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/site.cer">http://192.168.54.132:3000/site.cer</a><br>
+      <a href="http://192.168.54.132:3000/site.cer">http://192.168.54.132:3000/site.cer</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/backup.jks</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/backup.jks: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/backup.jks">http://192.168.54.132:3000/backup.jks</a><br>
+      <a href="http://192.168.54.132:3000/backup.jks">http://192.168.54.132:3000/backup.jks</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/archive.tar.lzma</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/archive.tar.lzma: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/archive.tar.lzma">http://192.168.54.132:3000/archive.tar.lzma</a><br>
+      <a href="http://192.168.54.132:3000/archive.tar.lzma">http://192.168.54.132:3000/archive.tar.lzma</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/19216854132.alz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/19216854132.alz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/19216854132.alz">http://192.168.54.132:3000/19216854132.alz</a><br>
+      <a href="http://192.168.54.132:3000/19216854132.alz">http://192.168.54.132:3000/19216854132.alz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/19216854132.tar.bz2</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/19216854132.tar.bz2: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/19216854132.tar.bz2">http://192.168.54.132:3000/19216854132.tar.bz2</a><br>
+      <a href="http://192.168.54.132:3000/19216854132.tar.bz2">http://192.168.54.132:3000/19216854132.tar.bz2</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/132.tgz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/132.tgz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/132.tgz">http://192.168.54.132:3000/132.tgz</a><br>
+      <a href="http://192.168.54.132:3000/132.tgz">http://192.168.54.132:3000/132.tgz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/54.tgz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/54.tgz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/54.tgz">http://192.168.54.132:3000/54.tgz</a><br>
+      <a href="http://192.168.54.132:3000/54.tgz">http://192.168.54.132:3000/54.tgz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/backup.tar</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/backup.tar: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/backup.tar">http://192.168.54.132:3000/backup.tar</a><br>
+      <a href="http://192.168.54.132:3000/backup.tar">http://192.168.54.132:3000/backup.tar</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/54.war</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/54.war: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/54.war">http://192.168.54.132:3000/54.war</a><br>
+      <a href="http://192.168.54.132:3000/54.war">http://192.168.54.132:3000/54.war</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/19216854.tgz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/19216854.tgz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/19216854.tgz">http://192.168.54.132:3000/19216854.tgz</a><br>
+      <a href="http://192.168.54.132:3000/19216854.tgz">http://192.168.54.132:3000/19216854.tgz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.alz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.alz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.alz">http://192.168.54.132:3000/192.168.alz</a><br>
+      <a href="http://192.168.54.132:3000/192.168.alz">http://192.168.54.132:3000/192.168.alz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/dump.pem</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/dump.pem: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/dump.pem">http://192.168.54.132:3000/dump.pem</a><br>
+      <a href="http://192.168.54.132:3000/dump.pem">http://192.168.54.132:3000/dump.pem</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.54.cer</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.54.cer: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.54.cer">http://192.168.54.132:3000/192.168.54.cer</a><br>
+      <a href="http://192.168.54.132:3000/192.168.54.cer">http://192.168.54.132:3000/192.168.54.cer</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.54.132.jks</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.54.132.jks: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.54.132.jks">http://192.168.54.132:3000/192.168.54.132.jks</a><br>
+      <a href="http://192.168.54.132:3000/192.168.54.132.jks">http://192.168.54.132:3000/192.168.54.132.jks</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/dump.egg</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/dump.egg: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/dump.egg">http://192.168.54.132:3000/dump.egg</a><br>
+      <a href="http://192.168.54.132:3000/dump.egg">http://192.168.54.132:3000/dump.egg</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/168.alz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/168.alz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/168.alz">http://192.168.54.132:3000/168.alz</a><br>
+      <a href="http://192.168.54.132:3000/168.alz">http://192.168.54.132:3000/168.alz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/19216854.cer</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/19216854.cer: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/19216854.cer">http://192.168.54.132:3000/19216854.cer</a><br>
+      <a href="http://192.168.54.132:3000/19216854.cer">http://192.168.54.132:3000/19216854.cer</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192168.tar.lzma</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192168.tar.lzma: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192168.tar.lzma">http://192.168.54.132:3000/192168.tar.lzma</a><br>
+      <a href="http://192.168.54.132:3000/192168.tar.lzma">http://192.168.54.132:3000/192168.tar.lzma</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.tar.bz2</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.tar.bz2: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.tar.bz2">http://192.168.54.132:3000/192.168.tar.bz2</a><br>
+      <a href="http://192.168.54.132:3000/192.168.tar.bz2">http://192.168.54.132:3000/192.168.tar.bz2</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.alz</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.alz: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.alz">http://192.168.54.132:3000/192.alz</a><br>
+      <a href="http://192.168.54.132:3000/192.alz">http://192.168.54.132:3000/192.alz</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.54.tar.bz2</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.54.tar.bz2: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.54.tar.bz2">http://192.168.54.132:3000/192.168.54.tar.bz2</a><br>
+      <a href="http://192.168.54.132:3000/192.168.54.tar.bz2">http://192.168.54.132:3000/192.168.54.tar.bz2</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/dump.cer</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/dump.cer: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/dump.cer">http://192.168.54.132:3000/dump.cer</a><br>
+      <a href="http://192.168.54.132:3000/dump.cer">http://192.168.54.132:3000/dump.cer</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.tar</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.tar: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.tar">http://192.168.54.132:3000/192.tar</a><br>
+      <a href="http://192.168.54.132:3000/192.tar">http://192.168.54.132:3000/192.tar</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/database.war</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/database.war: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/database.war">http://192.168.54.132:3000/database.war</a><br>
+      <a href="http://192.168.54.132:3000/database.war">http://192.168.54.132:3000/database.war</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/database.tar</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/database.tar: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/database.tar">http://192.168.54.132:3000/database.tar</a><br>
+      <a href="http://192.168.54.132:3000/database.tar">http://192.168.54.132:3000/database.tar</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/168.tar</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/168.tar: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/168.tar">http://192.168.54.132:3000/168.tar</a><br>
+      <a href="http://192.168.54.132:3000/168.tar">http://192.168.54.132:3000/168.tar</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/132.war</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/132.war: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/132.war">http://192.168.54.132:3000/132.war</a><br>
+      <a href="http://192.168.54.132:3000/132.war">http://192.168.54.132:3000/132.war</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/132.egg</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/132.egg: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/132.egg">http://192.168.54.132:3000/132.egg</a><br>
+      <a href="http://192.168.54.132:3000/132.egg">http://192.168.54.132:3000/132.egg</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/database.tar.lzma</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/database.tar.lzma: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/database.tar.lzma">http://192.168.54.132:3000/database.tar.lzma</a><br>
+      <a href="http://192.168.54.132:3000/database.tar.lzma">http://192.168.54.132:3000/database.tar.lzma</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/backup.tar.lzma</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/backup.tar.lzma: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/backup.tar.lzma">http://192.168.54.132:3000/backup.tar.lzma</a><br>
+      <a href="http://192.168.54.132:3000/backup.tar.lzma">http://192.168.54.132:3000/backup.tar.lzma</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/192.168.54.egg</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/192.168.54.egg: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/192.168.54.egg">http://192.168.54.132:3000/192.168.54.egg</a><br>
+      <a href="http://192.168.54.132:3000/192.168.54.egg">http://192.168.54.132:3000/192.168.54.egg</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/54.tar.lzma</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/54.tar.lzma: Potentially interesting backup/cert file found. .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/54.tar.lzma">http://192.168.54.132:3000/54.tar.lzma</a><br>
+      <a href="http://192.168.54.132:3000/54.tar.lzma">http://192.168.54.132:3000/54.tar.lzma</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/530.html'>https://cwe.mitre.org/data/definitions/530.html</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/ftp/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/ftp/: This might be interesting.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/ftp/">http://192.168.54.132:3000/ftp/</a><br>
+      <a href="http://192.168.54.132:3000/ftp/">http://192.168.54.132:3000/ftp/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/public/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/public/: This might be interesting.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.54.132:3000/public/">http://192.168.54.132:3000/public/</a><br>
+      <a href="http://192.168.54.132:3000/public/">http://192.168.54.132:3000/public/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<div>
+<p></p>
+<table class="headerTable">
+ <tr>
+  <td>Host Summary</td>
+ </tr>
+</table>
+<table  class="dataTable">
+ <tr>
+  <td class="column-head">Start Time</td>
+  <td>2025-04-22 11:24:16</td>
+ </tr>
+ <tr>
+  <td class="column-head">End Time</td>
+  <td>2025-04-22 11:25:31</td>
+ </tr>
+ <tr>
+  <td class="column-head">Elapsed Time</td>
+  <td>75 seconds</td>
+ </tr>
+ <tr>
+  <td class="column-head">Statistics</td>
+  <td>3173 requests, 2 errors, 167 findings</td>
+ </tr>
+</table>
+</div>
+<p></p>
+
+<p></p>
+<table class="headerTable">
+  <tr>
+    <td>Scan Summary</td>
+  </tr>
+</table>
+<table class="dataTable">
+  <tr>
+    <td class="column-head">Software Details</td>
+    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
+  <tr>
+    <td class="column-head">CLI Options</td>
+    <td>-h 192.168.54.132 -p 3000 -T 13 -t 3 -D v -o web4 -F htm</td>
+  </tr>
+  <tr>
+    <td class="column-head">Hosts Tested</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td class="column-head">Start Time</td>
+    <td>Tue Apr 22 11:24:15 2025</td>
+  </tr>
+  <tr>
+    <td class="column-head">End Time</td>
+    <td>Tue Apr 22 11:25:31 2025</td>
+  </tr>
+  <tr>
+    <td class="column-head">Elapsed Time</td>
+    <td>76 seconds</td>
+  </tr>
+</table>
+<p></p>
+<p class="copyright">&copy; 2008 Chris Sullo</p>
+
+<!-- (c) 2008 Chris Sullo -->
+
+</body>
+</html>
+
