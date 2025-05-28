@@ -1,42 +1,58 @@
-# 🛠 Tools Used for Vulnerability Assessment
+# 🔍 Methodologies Used in Vulnerability Assessment
 
-This document lists and describes the tools employed during the vulnerability assessment of the OWASP Juice Shop application.
+This document outlines the methodologies followed during the penetration testing of the OWASP Juice Shop application.
 
 ---
 
-## 1. OWASP ZAP (Zed Attack Proxy)
-- **Purpose**: Automated vulnerability scanning
-- **Functions**:
-  - Spidering web pages
-  - Active/passive scans
-  - Fuzzing and input manipulation
+## 🔐 Assessment Type
+- **Black Box Testing**
+  - No access to internal code
+  - Simulates real-world external attacker
 
-## 2. Burp Suite (Community Edition)
-- **Purpose**: Manual testing and attack simulation
-- **Functions**:
-  - Proxy to intercept and modify HTTP/HTTPS traffic
-  - Repeater, Intruder, and Decoder tools
+## 🧪 Testing Approach
 
-## 3. Nikto
-- **Purpose**: Web server scanning
-- **Functions**:
-  - Detects outdated software
-  - Identifies insecure headers and files
+### 1. Reconnaissance
+- Enumerated public files (`robots.txt`, `main.js`)
+- Discovered hidden paths using Dirb/Gobuster
 
-## 4. Nmap *(optional)*
-- **Purpose**: Network scanning
-- **Functions**:
-  - Port and service discovery
-  - OS fingerprinting and script scanning
+### 2. Vulnerability Scanning
+- Automated scans via **OWASP ZAP**
+- Verified issues manually to reduce false positives
 
-## 5. Dirb / Gobuster
-- **Purpose**: Hidden file and directory enumeration
-- **Functions**:
-  - Brute-force paths based on wordlists
-  - Discover admin panels, configuration files, etc.
+### 3. Manual Testing Techniques
+- **SQL Injection (SQLi)**: Used payloads like `' OR '1'='1' --` to bypass login
+- **Cross-Site Scripting (XSS)**: Injected scripts into feedback fields
+- **Broken Access Control**: Attempted actions reserved for admin users
+- **Insecure Direct Object Reference (IDOR)**: Modified URL parameters to access other users’ data
+- **Information Disclosure**: Located sensitive data like password hashes and routes in JS files
+- **Cross-Site Request Forgery (CSRF)**: Simulated via forged POST requests
+- **Business Logic Abuse**: Repeated interactions to receive multiple discount codes
 
-## 6. Browser Developer Tools (Firefox)
-- **Purpose**: Client-side inspection
-- **Functions**:
-  - Analyzing source code and JavaScript
-  - Monitoring network requests
+### 4. Risk Analysis
+- Categorized vulnerabilities into Critical, High, Medium, Low, and Informational
+- Prioritized based on impact and likelihood
+
+### 5. Documentation & Reporting
+- Recorded evidence of vulnerabilities
+- Provided mitigation strategies and CWE references
+- Prepared report using screenshots and technical details
+
+---
+
+## 🧠 Standards and Guides Followed
+
+- [OWASP Top 10](https://owasp.org/www-project-top-ten/)
+- [OWASP Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
+- [OWASP ASVS](https://owasp.org/www-project-application-security-verification-standard/)
+- [PTES – Penetration Testing Execution Standard](https://www.pentest-standard.org/)
+- [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
+
+---
+
+## 🧑‍💻 Target Environment
+
+- **Application URL**: `http://localhost:3000/`
+- **Assessment Period**: 01/03/2025 – 30/04/2025
+- **Platform**: OWASP Juice Shop (Angular + Node.js + SQLite)
+- **Host OS**: Kali Linux
+- **Browser**: Firefox
